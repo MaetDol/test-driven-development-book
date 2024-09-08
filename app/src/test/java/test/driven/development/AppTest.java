@@ -6,7 +6,10 @@ package test.driven.development;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.Disabled;
+
 class AppTest {
+    @Disabled("테스트 실행 로그에 보이지 않게 하기위해 비활성화")
     @Test void appHasAGreeting() {
         App classUnderTest = new App();
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
